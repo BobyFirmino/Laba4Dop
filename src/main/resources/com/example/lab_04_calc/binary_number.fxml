@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="284.0" prefWidth="230.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab_04_calc.controller.BinaryNumberController">
+
+    <GridPane hgap="10" layoutX="42.0" layoutY="45.0" prefHeight="200.0" prefWidth="144.0" vgap="10">
+        <TextField fx:id="binaryDisplay" editable="true" prefHeight="50.0" prefWidth="180.0" GridPane.columnSpan="6">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+
+        <Button fx:id="button1" minHeight="40.0" minWidth="40.0" onAction="#processNumpad" text="1" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+        <Button fx:id="button0" minHeight="40.0" minWidth="40.0" onAction="#processNumpad" text="0" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" />
+
+        <Button fx:id="buttonPlus" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="+" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+        <Button fx:id="buttonSubtract" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="-" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+        <Button fx:id="buttonMultiply" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="*" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+
+        <Button fx:id="buttonBackspace" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="⌫" GridPane.columnIndex="0" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+        <Button fx:id="buttonClear" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="C" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+        <Button fx:id="buttonEquals" minHeight="40.0" minWidth="40.0" onAction="#processOperator" text="=" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+
+        <columnConstraints>
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints percentHeight="0.0" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+        </rowConstraints>
+    </GridPane>
+
+</AnchorPane>
